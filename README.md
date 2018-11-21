@@ -17,7 +17,7 @@ Para instalar esta API solo falta seguir las siguientes instrucciones:
 - Ejecutar el comando [$ php artisan db:seed --class=AdminTableSeederder] para crear usuarios de prueba.
 - Usar POSTMAN o la herramienta de preferencia para probar las peticiones.
 
-## Las peticones se realizarán deacuerdo al siguiente formato o estructura:
+## Las peticiones se realizarán de acuerdo al siguiente formato o estructura:
 
 ADMIN:
 
