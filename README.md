@@ -42,7 +42,7 @@ Para hacerlo, sólo basta con pasar como parametro en el header [Authorization :
 - DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
 
 
-##Instruções de instalação
+## Instruções de instalação
 
 Para instalar esta API, basta seguir as seguintes instruções:
 
