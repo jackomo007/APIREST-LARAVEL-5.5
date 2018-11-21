@@ -2,52 +2,116 @@
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Instrucciones de Instalación
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Para instalar esta API solo falta seguir las siguientes instrucciones:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Copiar el repositorio a su ordernador.
+- Crear una base de datos con el nombre "noticia" con el cotejamiento utf8_general_ci.
+- Ejecutar la terminal o consola y acceder al directorio donde se encuentre el proyecto.
+- Ejecutar el comando [$ php artisan migrate] para crear las tablas.
+- Ejecutar el comando [$ php artisan db:seed --class=NoticiasTableSeeder] para crear noticias de prueba.
+- Ejecutar el comando [$ php artisan db:seed --class=AdminTableSeederder] para crear usuarios de prueba.
+- Usar POSTMAN o la herramienta de preferencia para probar las peticiones.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## Las peticones se realizarán deacuerdo al siguiente formato o estructura:
 
-## Learning Laravel
+ADMIN:
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+-POST http://127.X.X.X:XXX/api/register
+-GET http://127.X.X.X:XXX/api/register/4
+-PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+-DELETE http://127.X.X.X:XXX/api/register/3
+-POST http://127.X.X.X:XXX/api/login/
+-POST http://127.X.X.X:XXX/api/logout/
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+NOTICIA:
 
-## Laravel Sponsors
+-GET http://127.X.X.X:XXX/api/noticias/4
+-GET http://127.X.X.X:XXX/api/noticias
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+Nota: Las siguientes operaciones estan protegidas, por lo que se debe estar autenticado para acceder.
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
+Para hacerlo, sólo basta con pasar como parametro en el header [Authorization : Bearer + el api_token almacenado en la base de datos al ejectutar la peticion de  "login"].
 
-## Contributing
+-POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+-PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+-DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
+##Instruções de instalação
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Para instalar esta API, basta seguir as seguintes instruções:
 
-## License
+- Copie o repositório para o seu computador.
+- Crie um banco de dados com o nome "news" com o agrupamento utf8_general_ci.
+- Execute o terminal ou console e acesse o diretório onde o projeto está localizado.
+- Execute o comando [$ php artisan migrate] para criar as tabelas.
+- Execute o comando [$ php artisan db: seed --class = NewsTableSeeder] para criar notícias de teste.
+- Execute o comando [$ php artisan db: seed --class = AdminTableSeederder] para criar usuários de teste.
+- Use o POSTMAN ou a ferramenta de preferência para testar as solicitações.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+## Os pedidos serão feitos de acordo com o seguinte formato ou estrutura:
+
+ADMIN:
+
+-POST http://127.X.X.X:XXX/api/register
+-GET http://127.X.X.X:XXX/api/register/4
+-PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+-DELETE http://127.X.X.X:XXX/api/register/3
+-POST http://127.X.X.X:XXX/api/login/
+-POST http://127.X.X.X:XXX/api/logout/
+
+NOTICIA():
+
+-GET http://127.X.X.X:XXX/api/noticias/4
+-GET http://127.X.X.X:XXX/api/noticias
+
+Nota: As seguintes operações são protegidas, portanto, você deve estar autenticado para acessar.
+
+Para fazer isso, basta passar como um parâmetro no cabeçalho [Authorization: Bearer + o api_token armazenado no banco de dados ao executar a requisição "login"].
+
+-POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+-PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+-DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
+
+
+## Instalation Instructions:
+
+
+To install this API, it is only necessary to follow the following instructions:
+
+- Copy the repository to your computer.
+- Create a database with the name "news" with the collation utf8_general_ci.
+- Run the terminal or console and access the directory where the project is located.
+- Run the [$ php artisan migrate] command to create the tables.
+- Run the [$ php artisan db: seed --class = NewsTableSeeder] command to create test news.
+- Run the [$ php artisan db: seed --class = AdminTableSeederder] command to create test users.
+- Use POSTMAN or the preference tool to test requests.
+
+## The requests will be made according to the following format or structure:
+
+ADMIN:
+
+-POST http://127.X.X.X:XXX/api/register
+-GET http://127.X.X.X:XXX/api/register/4
+-PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+-DELETE http://127.X.X.X:XXX/api/register/3
+-POST http://127.X.X.X:XXX/api/login/
+-POST http://127.X.X.X:XXX/api/logout/
+
+NOTICIA(NEWS):
+
+-GET http://127.X.X.X:XXX/api/noticias/4
+-GET http://127.X.X.X:XXX/api/noticias
+
+Note: The following operations are protected, so you must be authenticated to access.
+
+To do so, just pass as a parameter in the header [Authorization: Bearer + the api_token stored in the database when executing the "login" request].
+
+-POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+-PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+-DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6

@@ -16,7 +16,11 @@ class NoticiaController extends Controller
     }
 
     public function store(Request $request){
-        $noticia = Noticia::create($request->all());
+        $noticia = Noticia::create([
+            'title'=> $request->title,
+            'body'=> $request->body,
+            'date' => date('Y-m-d')
+            ]);
 
         return response()->json($noticia,201);
     }

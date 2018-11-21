@@ -20,6 +20,7 @@ class NoticiasTableSeeder extends Seeder
             Noticia::create([
                 'title' => $faker->sentence,
                 'body' => $faker->paragraph,
+                'date' => $faker->date,
             ]);
         }
     }
