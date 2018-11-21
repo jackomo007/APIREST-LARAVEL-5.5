@@ -21,25 +21,25 @@ Para instalar esta API solo falta seguir las siguientes instrucciones:
 
 ADMIN:
 
--POST http://127.X.X.X:XXX/api/register
--GET http://127.X.X.X:XXX/api/register/4
--PUT http://127.X.X.X:XXX/api/register/7?name=Jose
--DELETE http://127.X.X.X:XXX/api/register/3
--POST http://127.X.X.X:XXX/api/login/
--POST http://127.X.X.X:XXX/api/logout/
+- POST http://127.X.X.X:XXX/api/register
+- GET http://127.X.X.X:XXX/api/register/4
+- PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+- DELETE http://127.X.X.X:XXX/api/register/3
+- POST http://127.X.X.X:XXX/api/login/
+- POST http://127.X.X.X:XXX/api/logout/
 
 NOTICIA:
 
--GET http://127.X.X.X:XXX/api/noticias/4
--GET http://127.X.X.X:XXX/api/noticias
+- GET http://127.X.X.X:XXX/api/noticias/4
+- GET http://127.X.X.X:XXX/api/noticias
 
 Nota: Las siguientes operaciones estan protegidas, por lo que se debe estar autenticado para acceder.
 
 Para hacerlo, sólo basta con pasar como parametro en el header [Authorization : Bearer + el api_token almacenado en la base de datos al ejectutar la peticion de  "login"].
 
--POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
--PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
--DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
+- POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+- PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+- DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
 
 
 ##Instruções de instalação
@@ -58,25 +58,25 @@ Para instalar esta API, basta seguir as seguintes instruções:
 
 ADMIN:
 
--POST http://127.X.X.X:XXX/api/register
--GET http://127.X.X.X:XXX/api/register/4
--PUT http://127.X.X.X:XXX/api/register/7?name=Jose
--DELETE http://127.X.X.X:XXX/api/register/3
--POST http://127.X.X.X:XXX/api/login/
--POST http://127.X.X.X:XXX/api/logout/
+- POST http://127.X.X.X:XXX/api/register
+- GET http://127.X.X.X:XXX/api/register/4
+- PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+- DELETE http://127.X.X.X:XXX/api/register/3
+- POST http://127.X.X.X:XXX/api/login/
+- POST http://127.X.X.X:XXX/api/logout/
 
 NOTICIA():
 
--GET http://127.X.X.X:XXX/api/noticias/4
--GET http://127.X.X.X:XXX/api/noticias
+- GET http://127.X.X.X:XXX/api/noticias/4
+- GET http://127.X.X.X:XXX/api/noticias
 
 Nota: As seguintes operações são protegidas, portanto, você deve estar autenticado para acessar.
 
 Para fazer isso, basta passar como um parâmetro no cabeçalho [Authorization: Bearer + o api_token armazenado no banco de dados ao executar a requisição "login"].
 
--POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
--PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
--DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
+- POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+- PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+- DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
 
 
 ## Instalation Instructions:
@@ -96,22 +96,22 @@ To install this API, it is only necessary to follow the following instructions:
 
 ADMIN:
 
--POST http://127.X.X.X:XXX/api/register
--GET http://127.X.X.X:XXX/api/register/4
--PUT http://127.X.X.X:XXX/api/register/7?name=Jose
--DELETE http://127.X.X.X:XXX/api/register/3
--POST http://127.X.X.X:XXX/api/login/
--POST http://127.X.X.X:XXX/api/logout/
+- POST http://127.X.X.X:XXX/api/register
+- GET http://127.X.X.X:XXX/api/register/4
+- PUT http://127.X.X.X:XXX/api/register/7?name=Jose
+- DELETE http://127.X.X.X:XXX/api/register/3
+- POST http://127.X.X.X:XXX/api/login/
+- POST http://127.X.X.X:XXX/api/logout/
 
 NOTICIA(NEWS):
 
--GET http://127.X.X.X:XXX/api/noticias/4
--GET http://127.X.X.X:XXX/api/noticias
+- GET http://127.X.X.X:XXX/api/noticias/4
+- GET http://127.X.X.X:XXX/api/noticias
 
 Note: The following operations are protected, so you must be authenticated to access.
 
 To do so, just pass as a parameter in the header [Authorization: Bearer + the api_token stored in the database when executing the "login" request].
 
--POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
--PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
--DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
+- POST http://127.X.X.X:XXX/api/noticias/?title=Novo titulo&body=Novo conteudo 
+- PUT http://127.X.X.X:XXX/api/noticias/4?title=Titulo A
+- DELETE http://127.X.X.X:XXX/api/noticias/3 http://127.0.0.1:8000/api/noticias/6
